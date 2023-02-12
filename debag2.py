@@ -4,6 +4,16 @@ import random
 
 cmpNameList=["c12","c13","c14","c15","c16"]
 PinNameList=["c12_1","c12_2","c13_1","c13_2","c14_1","c14_2","c15_1","c15_2","c16_1","c16_2"]
+lyrList=[2.0,4.7,2.0,0,4.7]
+
+ct=0
+samdict=dict()
+#これで辞書型リストの完成。キーから値を取り出せる
+for key in cmpNameList:
+    samdict[key]=lyrList[ct]
+    ct+=1
+
+print("sam"+str(samdict))
 
 tempX=[]
 tempY=[]
